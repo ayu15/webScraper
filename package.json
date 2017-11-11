@@ -1,0 +1,17 @@
+{
+  "name": "webScraper",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Ayush Sharma",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.19.1",
+    "puppeteer": "^0.12.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
