@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "moment": "^2.19.1",
+    "numeral": "^2.0.6",
     "puppeteer": "^0.12.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
