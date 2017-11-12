@@ -11,6 +11,12 @@
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
   },
+  "scripts": {
+    "start": "node imdbRating.js"
+  },
+  "engines": {
+      "node": "8.x"
+  },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0"
