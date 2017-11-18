@@ -11,14 +11,14 @@ const getCurrentUrl = (pageNum) => {
     return urlPre + pageNum + urlPost;
 };
 const getWritingMoment = ()=>{
-    let c = moment().format("MMM D H-mm-ss");
+    let c = moment().format("MMM D H-mm");
     return c.toString();
 }
 let getAllData = async () => {
     const titleData = [];
     const browser = await puppeteer.launch({
-        headless: false,
-        timeout: 60000
+        headless: true,
+        timeout: 40000
     });
     const page = await browser.newPage();
     const getRatings = async (cTitle) => {
@@ -85,6 +85,7 @@ let getAllData = async () => {
     for (let cTitle of titles) {
         let result = await getRatings(cTitle);
         result.id = cTitle;
+        result.timeStamp = getWritingMoment();
         titleData.push(result);
     }
     browser.close();
